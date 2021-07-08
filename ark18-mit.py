@@ -2,11 +2,11 @@ import logging
 
 import mitmproxy.http
 
-logger = logging.getLogger('log-ark18')
+logger = logging.getLogger('ark18')
 logger.setLevel(level=logging.INFO)
 formatter = logging.Formatter('[%(asctime)s-%(name)s-%(levelname)s] %(message)s')
 
-fh = logging.FileHandler('ark.log')
+fh = logging.FileHandler('log-ark.log')
 fh.setLevel(logging.INFO)
 fh.setFormatter(formatter)
 sh = logging.StreamHandler()
