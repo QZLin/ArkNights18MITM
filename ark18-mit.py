@@ -31,6 +31,7 @@ def strs(*values, mid_char=' '):
 class Ark18:
     intervals = [1832, 2324, 3726, 4649, 4117, 4648, 5027]
     content = '{"result":0,"message":"OK","interval":4649,"timeLeft":-1,"alertTime":600}'
+    block_content = '{"result":2,"message":"您已达到本日在线时长上限或不在可游戏时间范围内，请合理安排游戏时间"}'
 
     def response(self, flow: mitmproxy.http.HTTPFlow):
         if 'hypergryph' in flow.request.pretty_host:
